@@ -1,0 +1,400 @@
+
+/*--首頁CSS--*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft JhengHei',sans-serif;
+}
+
+/*---------------影片 開始-----------------------*/
+.section{
+    position:relative;
+    overflow: hidden;
+    display: block;
+    height: 95vh;
+    color: #FFFFFF; 
+}
+
+.section video{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+div.back{
+    position: aboslute; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+}
+
+.container-fluid{
+    padding-right: 120px;
+    padding-left:120px;
+}
+
+#title-content{
+    position: absolute; 
+    z-index: 2;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);  
+}
+
+
+#title-content h1{
+    font-size: 70px;
+
+}
+
+#sub-title{
+    position: absolute; 
+    z-index: 2;
+    text-align: center;
+    top:92%;
+    left:50%;
+    transform: translate(-50%,-50%);  
+}
+
+#sub-title hr{
+    width: 10px;
+    height: 1px;
+    margin-bottom: 8px;
+    background: #fff;
+}
+
+
+#block1 hr{
+width: 20px;
+height: 3px;
+margin-top: 10px;
+margin-left: 2px;
+margin-bottom: 15px;
+}
+
+/*--影片背景--*/
+.back{
+    display: block;
+    position: relative;
+    top: -125%;
+    height: 124.3%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+/*---------------影片 結束-----------------------*/
+/*---------------NavBar 開始-----------------------*/
+.navbar{
+	transition: box-shadow .5s,background .5s;
+}
+
+body{
+	padding: 0px!important;
+}
+
+.modal-open{
+	overflow-y:scroll;	
+}
+
+/*--logo大小--*/
+.navbar .navbar-brand img{
+/*     border-radius: 100%; */
+}
+/*--中間文字--*/
+img.HomePageIcon {
+	height: 3.1rem;
+}
+
+/*按鈕文字顏色與間距*/
+.btnColor{
+    border-color: #f3f3f3;
+    color: #ededed;
+}
+
+/*navBar向下滑動*/
+#mainNav.navbar-scrolled {
+    transition: box-shadow .5s,background .5s;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background: #efe6de;
+}
+#mainNav.navbar-scrolled .btnColor2{
+	color:#e88a56;
+}
+/*navBar向下滑動的文字顏色*/
+.navbar .navbar-nav .nav-change, .navbar .nav-change {
+    color: #0D0D0D;
+}
+/* style="color:peachpuff;" */
+
+/*navBar REGIST的顏色*/
+.btnColor2{
+    border-color: #f3f3f3;
+    color: peachpuff;
+}
+
+/*navBar dropdown 開始*/
+
+/*--navBar dropdown的文字顏色--*/
+.nav-item .dropdown-menu a{
+    color : #f8f9fa;
+    letter-spacing:2px;
+    line-height: 0px; 
+    font-weight: 500; 
+    padding: 35px 20px;        
+}
+
+
+.navbar-nav .nav-item .dropdown-menu a:hover,
+.navbar-nav .nav-item .dropdown button:hover {
+    transition: all .5s;
+    color: #F28705;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: transparent;
+    border-radius: .25rem;
+    border-color: transparent;
+    margin-top: 0px;
+}
+
+.navbar-nav .nav-item .dropdown button {
+   border: 0;
+   padding: 0;
+   margin: 15px;
+   height: 100%;
+   font-size: 1.3rem;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item{
+    font-size: 16px;
+    padding: 1rem;
+    position: relative;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
+    background-color: transparent;
+}
+
+/*-------------navBar dropdown效果 結束--------------------------------*/
+
+
+/*---------------NavBar 結束-----------------------*/
+
+/*---------------向下按鈕 開始-----------------------*/
+#downbtn{
+    display: block;
+    height: 5vh;
+    text-align: center;
+    padding-top: 5px;
+    color: #eeeeee; 
+    background-color: #efe6de;
+}
+
+#downbtn img{
+    width: 23px;
+    height: 20px;
+    margin-top: 0.5rem;
+}
+
+/*---------------向下按鈕 結束-----------------------*/
+
+
+
+
+/*---------------block 開始--------------------*/
+.block-bg {  
+    background: rgba(255,255,255);
+}
+
+
+.block img{
+    width: 100%;
+    border-radius: 50%
+}
+
+
+div.block{
+    background-color: #efe6de;
+    margin: 0;
+    padding: 50px;
+}
+
+div.block hr{
+width: 20px;
+height: 3px;
+margin-top: 10px;
+margin-left: 2px;
+margin-bottom: 15px;
+}
+
+
+div.block h2{
+    color: #4a5a5c;
+    max-width: 350px;
+    font-size: 30px;
+    line-height: 38px;
+    font-family: Giraffey,serif;
+    background-color: #FFF;
+}
+
+div.col-lg-7{
+    z-index: 2;
+}
+
+div.col-lg-7 img{
+    width: 925px;
+    height: 593px;
+}
+
+div.bgleft{
+   background-color: #FFF;
+   padding-top: 150px;
+   padding-bottom: 140px;
+   margin-left: -90px; 
+}
+
+div.bgright{
+   background-color: #FFF;
+   padding-top: 150px;
+   padding-bottom: 140px;
+   margin-right: -90px; 
+}
+
+
+
+
+#block2 .block2img {
+    background-image: url(../images/event.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    width: 925px;
+    height: 593px;   
+}
+
+.indexBtnColor{
+	border: 1px solid;
+	background: #937c6f;
+	color: #FFFFFF;
+	border-radius:0;
+}
+
+	.indexBtnColor:hover{
+		border: 1px solid;
+		background: #FFFFFF;
+		color: #937c6f;
+	}
+	
+	.google{
+		width:49%;
+		background: red;
+	}
+		.google:hover{
+			color: red;
+		}
+	.facebook{
+		width:49%;
+		background: #4267b2;
+	}
+		.google:hover{
+			color: #4267b2;
+		}
+
+/*---------------block 結束--------------------*/
+
+
+/*---------------活動開始-----------------------*/
+#event{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.4),  rgba(0, 0, 0, 0.4)),
+                     url(../images/01.jpg);                                       
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;   
+}
+
+.container hr{
+    width: 60px;
+    margin: 0 auto;
+    height: 2px;
+    background:#595959;
+    border: none;
+}
+
+/*---------------活動 結束-----------------------*/
+
+
+/*---------------我的團隊開始-----------------------*/
+#team{
+    margin: 0;
+    padding: 0;
+    height: 70%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777
+}
+
+#team h1{
+    font-size: 36px;
+    color: #555;
+    font-weight: bold;
+}
+
+#team h3{
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+#team img{
+    margin-top: -50px;
+}
+
+#team i{
+    font-size: 26px;
+    color: #555;
+}
+
+#team p{
+    font-weight: 500;
+}
+
+#team .card{
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #937c6f;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+
+#team .card:hover{
+    background: #937c6f;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #9E9E9E;
+}
+
+#team .card:hover h3,#team .card:hover i{
+    color: #fff;
+}
+
+/*---------------我的團隊結束-----------------------*/
+
+
+/*---------------Footer 開始-----------------------*/
+
+#footer img{
+    width: 100px;
+    height: 100px;
+}
+
+.footer-bg{
+    background-color: #e7e8e8;
+}
+
+/*---------------Footer 結束-----------------------*/
