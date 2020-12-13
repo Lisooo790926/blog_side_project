@@ -17,6 +17,9 @@ import org.json.JSONObject;
 import com.article.model.ArticleService;
 import com.article.model.ArticleVO;
 import com.mem.model.MemVO;
+import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 public class ArticleServlet extends HttpServlet {
 
@@ -30,7 +33,8 @@ public class ArticleServlet extends HttpServlet {
 		
 		String action = request.getParameter("action");
 		HttpSession session = request.getSession();
-		
+
+		// show one
 		if ("getOne_For_Display".equals(action)) {
 			
 			// 建立ErrorMessage
@@ -95,7 +99,8 @@ public class ArticleServlet extends HttpServlet {
 				failureView.forward(request, response);
 			}
 		}
-		
+
+		// composite search
 		if ("getCompositeQuery_For_Display".equals(action)) {
 
 			List<String> errorMsgs = new ArrayList<>();
@@ -140,7 +145,7 @@ public class ArticleServlet extends HttpServlet {
 			}
 		}
 		
-		
+		// ajax
 		if ("getCompositeQuery_For_Ajax".equals(action)) {
 			
 			response.setContentType("text/html;charset=UTF8");
@@ -173,7 +178,8 @@ public class ArticleServlet extends HttpServlet {
 				out.print(jsonObj.toString());
 			}
 		}
-		
+
+		// insert
 		if ("insert".equals(action)) {
 
 			List<String> errorMsgs = new LinkedList<>();
@@ -238,6 +244,7 @@ public class ArticleServlet extends HttpServlet {
 			}
 		}
 
+		// update
 		if ("update".equals(action)) {
 
 			List<String> errorMsgs = new LinkedList<>();
@@ -299,7 +306,8 @@ public class ArticleServlet extends HttpServlet {
 				failureView.forward(request, response);
 			}
 		}
-		
+
+		// delete
 		if("delete".equals(action)) {
 			List<String> errorMsgs = new LinkedList<>();
 			request.setAttribute("errorMsgs", errorMsgs);
@@ -328,7 +336,7 @@ public class ArticleServlet extends HttpServlet {
 		}
 		
 		// ------------------------------------ 後台 ------------------------------------------------
-		
+
 		if("update_article_status".equals(action)) {
 			
 			List<String> errorMsgs = new LinkedList<>();
@@ -444,5 +452,25 @@ public class ArticleServlet extends HttpServlet {
 		}
 		return null;
 	}
-	
+}
+
+@Controller
+class ArticleController {
+
+	// 寫一條龍 DAO model service controller front隨便
+	// update
+	// insert
+	// composite search ajax
+	// composite search
+	// show all
+	// show one
+	// delete
+
+	@RequestMapping(value = "delete-article")
+	public String deleteTheArticle(final String title) {
+
+		// use service delete article
+
+		return ""; // return path
+	}
 }
